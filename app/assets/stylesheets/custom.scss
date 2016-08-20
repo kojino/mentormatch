@@ -1,98 +1,134 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
-
-/* universal */
-
-body {
-  padding-top: 60px;
+body{
+  margin: 0;
 }
 
-section {
-  overflow: auto;
+a{
+  text-decoration: none;
 }
 
-textarea {
-  resize: vertical;
-}
-
-.center {
+.top-wrapper{
+  padding: 180px 0 100px 0;
+  height: 500px;
+  background-image: image-url('home.png');
+  background-size: cover;
+  color: white;
   text-align: center;
   h1 {
-    margin-bottom: 10px;
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
   }
-}
+  p {
+    opacity: 0.7;
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
 
-/* typography */
+  .container{
+    margin-top: 120px
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
+  .signup{
+    background-color: #239b76;
+  }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
+  .facebook{
+    background-color: #3b5998;
+    margin-right: 10px;
+  }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $gray-light;
-}
+  .twitter{
+    background-color: #55acee;
+  }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-
-
-/* header */
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  &:hover {
+  .btn{
+    padding: 8px 24px;
     color: white;
-    text-decoration: none;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
   }
+
+  .btn:hover{
+    opacity: 1;
+  }
+
+  .fa{
+    margin-right: 5px;
+  }
+
 }
 
-/* footer */
+.container{
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+header{
+  height: 65px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.25);
+  position:fixed;
+  top:0;
+  z-index:10;
+  color: white;
+  opacity: 0.8;
+}
+
+.logo{
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left{
+  float: left;
+}
+
+.header-right{
+  float: right;
+  background-color: rgba(255,255,255,0.3);
+  transition: all 0.5s;
+  &:hover {
+    background-color: rgba(255,255,255,0.5);
+  }
+  a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+  }
+}
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
+  background: light-grey;
+  img {
+    width: 125px;
   }
-  small {
-    float: left;
-  }
+
   ul {
-    float: right;
-    list-style: none;
-    li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+
+
+  li {
       float: left;
-      margin-left: 15px;
-    }
+  }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+  }
+
+  li a:hover {
+      background-color: #111111;
   }
 }
