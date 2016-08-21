@@ -1,109 +1,3 @@
-body{
-  margin: 0;
-}
-
-a{
-  text-decoration: none;
-}
-
-.top-wrapper{
-  padding: 180px 0 100px 0;
-  height: 500px;
-  background-image: image-url('home.png');
-  background-size: cover;
-  color: white;
-  text-align: center;
-  h1 {
-    opacity: 0.7;
-    font-size: 45px;
-    letter-spacing: 5px;
-  }
-  p {
-    opacity: 0.7;
-    font-size: 14px;
-    margin-bottom: 35px;
-  }
-
-  .container{
-    margin-top: 120px
-  }
-
-  .signup{
-    background-color: #239b76;
-  }
-
-  .facebook{
-    background-color: #3b5998;
-    margin-right: 10px;
-  }
-
-  .twitter{
-    background-color: #55acee;
-  }
-
-  .btn{
-    padding: 8px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 4px;
-  }
-
-  .btn:hover{
-    opacity: 1;
-  }
-
-  .fa{
-    margin-right: 5px;
-  }
-
-}
-
-.container{
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-/* home header */
-header.home{
-  height: 65px;
-  width: 100%;
-  background-color: rgba(0,0,0,0.25);
-  position:fixed;
-  top:0;
-  z-index:10;
-  color: white;
-  opacity: 0.8;
-}
-
-.logo{
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left{
-  float: left;
-}
-
-.header-right{
-  float: right;
-  background-color: rgba(255,255,255,0.3);
-  transition: all 0.5s;
-  &:hover {
-    background-color: rgba(255,255,255,0.5);
-  }
-  a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-  }
-}
-
-
-/* general header */
-
 .header-user-dropdown {
   background-color:#292c2f;
   box-shadow:0 1px 1px #ccc;
@@ -126,6 +20,7 @@ header.home{
   font: normal 28px Cookie, Arial, Helvetica, sans-serif;
   line-height: 40px;
   margin:0;
+  color: orange;
 }
 
 .header-user-dropdown .header-limiter h1 span {
@@ -244,6 +139,7 @@ header.home{
 
   .header-user-dropdown .header-limiter h1 {
     font-size: 24px;
+    color: black;
   }
 
   .header-user-dropdown .header-limiter nav a {
@@ -262,36 +158,4 @@ header.home{
     display: none;
   }
 
-}
-
-footer {
-  background: light-grey;
-  img {
-    width: 125px;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-  }
-
-
-  li {
-      float: left;
-  }
-
-  li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 16px;
-      text-decoration: none;
-  }
-
-  li a:hover {
-      background-color: #111111;
-  }
 }
