@@ -1,0 +1,37 @@
+<% provide(:title, "Log in") %>
+<div class="sign-up-container">
+  <div class="row">
+      <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+       <%= form_for(:session, url: login_path) do |f| %>
+        <h2>Please Log in</h2>
+        <hr class="colorgraph" script=>
+        <div class="form-group">
+          <%= f.email_field :email, class:"form-control input-lg", tabindex:"4", placeholder:"Email Adress"%>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+              <%= f.password_field :password, class:"form-control input-lg", tabindex:"5", placeholder:"Password"%>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+              <%= f.label :remember_me, class: "checkbox inline", tabindex:"10" do %>
+                <%= f.check_box :remember_me %>
+                <span>Remember me on this computer</span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <hr class="colorgraph">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <%= f.submit "Log in", class: "btn btn-success btn-block btn-lg" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
