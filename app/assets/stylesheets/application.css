@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+.home a, .top-wrapper a, .header-user-dropdown a {
+  color: white;
+  text-decoration: none;
+  &:hover, &:focus{
+    color: white;
+    text-decoration: none;
+  }
+}

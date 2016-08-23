@@ -1,11 +1,11 @@
 <header class="header-user-dropdown">
 
   <div class="header-limiter">
-    <h1>MentorMatch</h1>
+    <h1><%= link_to "MentorMatch", root_path%></h1>
     <% if logged_in? %>
       <nav>
-        <a href="#">Find</a>
-        <a href="#">MyPage</a>
+        <%= link_to "Find", users_path%>
+        <%= link_to "My Page", current_user%>
       </nav>
 
     <div class="header-user-menu">
@@ -13,7 +13,7 @@
 
       <ul>
         <li><%= link_to "Profile", current_user %></li>
-        <li><a href="#">Settings</a></li>
+        <li><%= link_to "Settings", edit_user_path(current_user) %></li>
         <li><%= link_to "Log out", logout_path, method: "delete" %></li>
       </ul>
     </div>
